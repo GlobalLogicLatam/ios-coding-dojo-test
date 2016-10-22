@@ -253,8 +253,8 @@ class InteractorWorker: ListWorkerProtocol {
     
     var callSuccess: Bool = false
     var items: [Item] = []
-    func getList(_ success: (ListResponse) -> Void, fail: () -> Void) {
-
+    
+    func getList(_ success: @escaping (ListResponse) -> Void, fail: @escaping () -> Void) {
         if callSuccess {
             success(ListResponse(withItems: items))
         } else {
@@ -262,8 +262,10 @@ class InteractorWorker: ListWorkerProtocol {
         }
     }
     
-    func getImage(_ url: String, success: (UIImage) -> Void, fail: (NSError) -> Void) {
+    func getImage(_ url: String, success: @escaping (UIImage) -> Void, fail: @escaping (NSError) -> Void) {
+    
     }
+
 }
 
 class InteractorOutputMock: ListInteractorOutput {
