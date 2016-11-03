@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BFE680A1DCA894F00009832 /* GLListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE68091DCA894F00009832 /* GLListPresenterTest.swift */; };
 		68139BDD1CF6817E00E78EB7 /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 68139BDC1CF6817E00E78EB7 /* mario.png */; };
 		681D66BA1CE37965005B2D56 /* ListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686CB49F1CE255EA000715DD /* ListModels.swift */; };
 		681D66C41CE380BB005B2D56 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D66BD1CE380BB005B2D56 /* DetailConfigurator.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFE68091DCA894F00009832 /* GLListPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLListPresenterTest.swift; sourceTree = "<group>"; };
 		2866CC364136A05583F87BF3 /* Pods_GLClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F90C910AEB9F53543F1B930 /* Pods-GLClubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLClubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLClubUITests/Pods-GLClubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47420D287A7C36C5DDFC7C04 /* Pods_GLClubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLClubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,7 @@
 		688318DF1CE252B30035BB58 /* GLClubTests */ = {
 			isa = PBXGroup;
 			children = (
+				0BFE68091DCA894F00009832 /* GLListPresenterTest.swift */,
 				688318E21CE252B30035BB58 /* Info.plist */,
 				68584DBE1D0A0DCE003FBC74 /* GLListInteractorTest.swift */,
 			);
@@ -501,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFE680A1DCA894F00009832 /* GLListPresenterTest.swift in Sources */,
 				68584DCF1D0A1222003FBC74 /* DetailRouter.swift in Sources */,
 				68584DCB1D0A1222003FBC74 /* DetailConfigurator.swift in Sources */,
 				68584DCD1D0A1222003FBC74 /* DetailModels.swift in Sources */,
