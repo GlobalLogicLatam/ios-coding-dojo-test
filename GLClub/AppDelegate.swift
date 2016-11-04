@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UISearchBar.appearance().barTintColor = UIColor.orange
         UISearchBar.appearance().tintColor = UIColor.white
-        
+        Fabric.with([Crashlytics.self])
         return true
     }
 

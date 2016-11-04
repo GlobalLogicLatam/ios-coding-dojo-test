@@ -9,14 +9,18 @@ target 'GLClub' do
   pod 'SWXMLHash', '~> 3.0.0'
   pod 'Alamofire', '~> 4.0'
   pod 'AlamofireImage', '~> 3.1'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
 end
 
 target 'GLClubTests' do
   pod 'SWXMLHash', '~> 3.0.0'
   pod 'Alamofire', '~> 4.0'
   pod 'AlamofireImage', '~> 3.1'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
 end
 
 post_install do |installer|
