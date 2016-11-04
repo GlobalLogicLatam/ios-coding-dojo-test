@@ -4,3 +4,6 @@ xcodeproj: GLClub.xcodeproj
 scheme: GLClub
 source_directory: GLClub/
 output_directory: build/xml_report
+ignore:
+    - Pods/*
+    - GLClubTests/*
