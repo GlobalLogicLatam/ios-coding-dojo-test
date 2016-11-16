@@ -104,6 +104,40 @@ class ListPresenterTest: XCTestCase {
         XCTAssert(intoutput.filterResult.count == model.count)
         XCTAssert(intoutput.displayFilterListVerify)
     }
+    
+    func testPresenterThreeFilterList() {
+        let presenter: ListPresenter = ListPresenter()
+        let intoutput = PresenterOutputMock()
+        
+        presenter.output = intoutput
+        var model: [Item] = []
+        model.append(Item(
+            title: "abcd title cuatro",
+            description: "descripcion cinco",
+            content: "",
+            creator: "andres",
+            pubDate: "4/7/2016",
+            imageURL: ""))
+        model.append(Item(
+            title: "abcd title tres",
+            description: "descripcion dos",
+            content: "",
+            creator: "fran",
+            pubDate: "4/7/2016",
+            imageURL: ""))
+        model.append(Item(
+            title: "abcd title cuatro",
+            description: "descripcion menos uno",
+            content: "",
+            creator: "Facu",
+            pubDate: "6/2/2015",
+            imageURL: ""))
+        presenter.presentFilterList(model)
+        
+        XCTAssert(intoutput.filterResult.count == model.count)
+        XCTAssert(intoutput.displayFilterListVerify)
+    }
+
 }
 
 class PresenterOutputMock : ListPresenterOutput {
